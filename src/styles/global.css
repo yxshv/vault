@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
   color-scheme: light;
   --bg: #fbfaf7;
@@ -12,8 +13,12 @@
 }
 
 html {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "MONO" 1;
   background: var(--bg);
+  letter-spacing: -0.03em;
   color: var(--text);
 }
 
@@ -51,7 +56,6 @@ h1 {
   margin: 0 0 1rem;
   font-size: clamp(2.2rem, 8vw, 5.8rem);
   font-weight: 500;
-  letter-spacing: -0.06em;
   line-height: 0.92;
 }
 
@@ -64,12 +68,13 @@ h1 {
 }
 
 .note {
-  font-size: 1.1rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .note h1 {
-  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .note h2,
@@ -111,10 +116,15 @@ h1 {
   .page-shell {
     width: 100%;
     max-width: none;
-    padding: 6rem clamp(3rem, 8vw, 8rem);
+    padding: 6rem clamp(3rem, 20vw, 50rem);
   }
 
   .note {
     max-width: 58rem;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

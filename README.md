@@ -19,10 +19,12 @@ Your public note content.
 Then run:
 
 ```sh
-npm run publish
+bun run publish
 ```
 
 The publish command copies public notes into `src/content/notes` and stages only allowlisted website files.
+
+Obsidian embeds like `![[image.png]]` are copied into `public/attachments` and rewritten to normal Markdown image links.
 
 Review the staged changes before committing:
 
@@ -41,7 +43,7 @@ git push
 Or prepare, commit, and push in one command:
 
 ```sh
-npm run publish:push
+bun run publish:push
 ```
 
 ## Setup
@@ -49,19 +51,19 @@ npm run publish:push
 Install dependencies:
 
 ```sh
-npm install
+bun install
 ```
 
 Start local development:
 
 ```sh
-npm run dev
+bun run dev
 ```
 
 Build locally:
 
 ```sh
-npm run build
+bun run build
 ```
 
 ## GitHub Pages

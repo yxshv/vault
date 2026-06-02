@@ -1,0 +1,22 @@
+{
+  "name": "obsidian-public-site",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "publish": "bun scripts/publish-public.ts",
+    "publish:push": "bun scripts/publish-public.ts --push"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "astro": "latest",
+    "gray-matter": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest"
+  }
+}

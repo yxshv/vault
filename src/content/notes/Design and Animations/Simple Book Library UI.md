@@ -41,9 +41,3 @@ also removed the rotation on hover (feels a bit of un-natural) and added rotatio
 [Screen Recording 2026-05-22 at 6.05.51 PM](/attachments/screen-recording-2026-05-22-at-6.05.51-pm.mov)
 
 Let's just remove the hover effect, it is meant to be like a book being lifted on hover but It's too much motion and I think it's unnecessary. 
-
-During the implementation of the drag feature and delete feature - 
-Stuff went bad
-1. I started coding the implementation before any planning, so It was like - I want to add something, instead of carefully looking at what is present and then adding stuff accordingly. I just kept on adding stuff and then checked if this works. This works but, as the features get complex and complex, this gets worse and worse.
-2. Some typescript stuff (not all), I just ignored instead of handling properly
-

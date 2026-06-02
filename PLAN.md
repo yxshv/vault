@@ -141,7 +141,7 @@ The deployment workflow should only receive public website files. The local publ
 3. Run:
 
 ```sh
-npm run publish
+bun run publish
 ```
 
 4. The command copies public notes into `src/content/notes`.

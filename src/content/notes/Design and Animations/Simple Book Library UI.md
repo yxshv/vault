@@ -35,9 +35,9 @@ Again, this is much better.
 Changed the font once again and added an hover effect.
 
 [Screen Recording 2026-05-21 at 2.53.39 PM](/attachments/screen-recording-2026-05-21-at-2.53.39-pm.mov)
-and now with the drag to reorder
-also removed the rotation on hover (feels a bit of un-natural) and added rotation while dragging (feels natural => good).
+
+Introduced drag-to-reorder functionality, removed hover rotation (unnatural), and added rotation while dragging (natural).
 
 [Screen Recording 2026-05-22 at 6.05.51 PM](/attachments/screen-recording-2026-05-22-at-6.05.51-pm.mov)
 
-Let's just remove the hover effect, it is meant to be like a book being lifted on hover but It's too much motion and I think it's unnecessary. 
+Let's remove the hover effect; it resembles a lifted book but adds unnecessary motion.

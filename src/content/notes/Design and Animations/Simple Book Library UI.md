@@ -24,7 +24,7 @@ And lets add a library icon.
 
 Feels better, but still not right.
 
-I feel like the issue now is that, the text in the book card is mixing with the surrounding. There needs to be a slight distinction.
+I feel that the issue now relates to the text in the book card blending with its surroundings, necessitating a subtle distinction.
 
 I tried to make the bg a bit darker (black/5) but it did not feel right. So, Let's just make the background a different colour (I saw this in Emil Kowalski's website) and add a inner shadow.
 

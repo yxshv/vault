@@ -2,7 +2,6 @@
 tags:
   - public
 ---
-
 This is the first version
 
 ![Pasted image 20260521124634](/attachments/pasted-image-20260521124634.png)
@@ -40,4 +39,6 @@ Introduced drag-to-reorder functionality, removed hover rotation (unnatural), an
 
 [Screen Recording 2026-05-22 at 6.05.51 PM](/attachments/screen-recording-2026-05-22-at-6.05.51-pm.mov)
 
-Let's remove the hover effect; it resembles a lifted book but adds unnecessary motion.
+Let's remove the hover effect completely; it resembles a lifted book but adds unnecessary motion.
+
+Initially, I considered a confirmation pop-up when a book cover is dragged to the trash, but it's too slow. Instead, I plan to throw it out of the library with a notification that includes an undo button to restore the book.

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 :root {
   color-scheme: light;
   --bg: #fbfaf7;
-  --text: #171512;
+  --text-heading: #171512;
+  --text-body: #171512cd;
   --muted: #686159;
   --line: #e6dfd5;
   --accent: #6f4f2f;
@@ -14,11 +15,12 @@
 }
 
 html {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
   background: var(--bg);
-  color: var(--text);
+  color: var(--text-body);
+  font-variation-settings:
+    "wdth" 100;
 }
 
 body {
@@ -56,6 +58,7 @@ h1 {
   font-size: clamp(2.2rem, 8vw, 5.8rem);
   font-weight: 500;
   line-height: 0.92;
+  color: var(--text-heading);
 }
 
 .lede {
@@ -80,6 +83,7 @@ h1 {
 .note h3 {
   margin: 2.5rem 0 0.75rem;
   line-height: 1.2;
+  color: var(--text-heading);
 }
 
 .note p,
@@ -88,6 +92,12 @@ h1 {
 .note blockquote,
 .note pre {
   margin: 1.2rem 0;
+  letter-spacing: 0.02rem;
+  font-weight: 350;
+}
+
+.note li {
+  margin-bottom: 0.1rem;
 }
 
 .note code {
@@ -100,7 +110,6 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 0.75rem;
   padding: 1rem;
-  background: #fffdf8;
 }
 
 .back-link {
@@ -123,6 +132,13 @@ h1 {
   }
 }
 
+p>code {
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  background: white;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -131,4 +147,32 @@ img {
 blockquote {
   padding-left: 1rem;
   border-left: 3px solid var(--line);
+}
+
+a {
+  position: relative;
+  margin-left: 1.3rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  letter-spacing: -0.02rem;
+  font-size: 0.95em;
+}
+
+a::before {
+  position: absolute;
+  content: '';
+  left: -1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1rem;
+  width: 1rem;
+  -webkit-mask-image: url("/link.svg");
+  mask-image: url("/link.svg");
+  background-color: var(--accent);
+}
+
+a[href$=".mov"]::before,
+a[href$=".mp4"]::before,
+a[href$=".webm"]::before {
+  -webkit-mask-image: url("/video.svg");
+  mask-image: url("/video.svg");
 }

@@ -5,7 +5,6 @@ const isUserSite = repoName?.endsWith('.github.io');
 
 export default defineConfig({
   site: process.env.SITE_URL ?? 'https://username.github.io',
-  base: process.env.BASE_PATH ?? (repoName && !isUserSite ? `/${repoName}` : undefined),
   markdown: {
     shikiConfig: {
       theme: 'github-light'
